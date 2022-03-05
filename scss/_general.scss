@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./../img/background-img.png);
+}
+
+/*NAVBAR*/
+
+.menu {
+  background-color: #f2b3c4;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.hover li a:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+  border: px solid black !important;
+}
+
+#cardPedidos {
+  background-color: #f2b3c4d8;
+}
+
+/* HOME */
+
+#carouselHome {
+  h1 {
+    font-size: 50px;
+    color: #f2b3c4;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  p {
+    font-size: 25px;
+    color: #f2b3c4;
+    text-shadow: 2px 2px 4px #000000;
+  }
+}

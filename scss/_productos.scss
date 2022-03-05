@@ -1,0 +1,32 @@
+/* PRODUCTOS */
+
+@media (min-width: 768px) {
+  #centrar-img {
+    position: relative;
+  }
+
+  #img-product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+#card-style {
+  background-color: #9196f2d8;
+
+  h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  ul {
+    li {
+      font-size: 20px;
+    }
+  }
+}
