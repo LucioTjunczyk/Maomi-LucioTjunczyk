@@ -27,6 +27,13 @@
       crossorigin="anonymous"
     />-->
 
+     <!--LIBRERIA DE ANIMACIONES-->
+
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+
     <!--FONTAWESOME-->
     <script
       src="https://kit.fontawesome.com/e80574ca7a.js"
@@ -80,28 +87,8 @@
                 <a class="nav-link" href="./recetas.html">Recetas</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sobre nosotros
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="./nosotros.html"
-                      >Quienes somos</a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Sumate al equipo</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
 
               <li class="nav-item">
@@ -115,6 +102,15 @@
 
     <!--CARDS RECETAS-->
     <main>
+      <div class="nosotros d-flex flex-column">
+        <div>
+          <h1 class="nosotros_title">Alguna de nuestras recetas</h1>
+        </div>
+        <div>
+          <p class="fs-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odit veniam voluptatibus vero eos consequatur iusto fugiat dolore recusandae debitis ut eum, assumenda atque minima ipsam necessitatibus laboriosam autem ullam quisquam doloremque quo blanditiis nostrum maxime. Minima iure excepturi sed.</p>
+        </div>
+      </div>
+
       <section class="grid-container">
         <div class="recipes">
           <div class="card-content">
@@ -127,7 +123,14 @@
             </div>
             <h4 class="card-content__title">Dumplings al vapor</h4>
             <div class="card-content__button">
-              <a href="#" class="button">Ver receta</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#dumpVapor"
+              >
+                Ver receta
+              </button>
             </div>
           </div>
         </div>
@@ -143,7 +146,14 @@
             </div>
             <h3 class="card-content__title">Dumplings a la plancha</h3>
             <div class="card-content__button">
-              <a href="#" class="button">Ver receta</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#dumpPlancha"
+              >
+                Ver receta
+              </button>
             </div>
           </div>
         </div>
@@ -159,7 +169,14 @@
             </div>
             <h4 class="card-content__title">Baos al vapor</h4>
             <div class="card-content__button">
-              <a href="#" class="button">Ver receta</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#baosVapor"
+              >
+                Ver receta
+              </button>
             </div>
           </div>
         </div>
@@ -175,7 +192,14 @@
             </div>
             <h4 class="card-content__title">Arrolladitos fritos</h4>
             <div class="card-content__button">
-              <a href="#" class="button">Ver receta</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#arrolladitosFritos"
+              >
+                Ver receta
+              </button>
             </div>
           </div>
         </div>
@@ -191,7 +215,14 @@
             </div>
             <h4 class="card-content__title">Wonton fritos</h4>
             <div class="card-content__button">
-              <a href="#" class="button">Ver receta</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#wontonFrito"
+              >
+                Ver receta
+              </button>
             </div>
           </div>
         </div>
@@ -207,11 +238,303 @@
             </div>
             <h4 class="card-content__title">Sopa de wonton</h4>
             <div class="card-content__button">
-              <a href="#" class="button">Ver receta</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#wontonSopa"
+              >
+                Ver receta
+              </button>
             </div>
           </div>
         </div>
       </section>
+
+      <!--MODAL DUMPLINGS VAPOR-->
+      <div
+      class="modal fade"
+      id="dumpVapor"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="exampleModalLabel" >Dumplings al vapor</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-decoration-underline">
+              Ingredientes para 4 personas:
+              <ul>
+                <li>40 dumplings congelados</li>             
+              </ul>    
+            </p>
+
+            <p class="text-decoration-underline">
+              Salsa clásica:
+              <ul>
+                <li>2 cucharadas Salsa de soja</li>             
+                <li>2 cucharadas de vinagre de arroz</li>             
+                <li>Un chorrito de aceite de sésamo</li>             
+              </ul>    
+            </p>
+            
+            <h6 class="text-decoration-underline">Elaboración:</h6>
+            <p>Nuestros dumplings congelados son muy fáciles de cocinar! Los mismos pueden ser cocinados en una vaporera o hervidos durante 10 minutos. Una vez pasado el tiempo de cocción, retirarlos y servirlos en un plato. No te olvides de acompañarlos con la salsa que más te guste.</p>
+          </div>
+          <div class="modal-footer position-relative" id="sasa">
+            <a href="https://youtu.be/OY_ZDw5VZjI" target="_blank" class="position-absolute top-50 start-50 translate-middle">¡Ver video de la receta!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL DUMPLINGS PLANCHA-->
+    <div
+    class="modal fade"
+    id="dumpPlancha"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel" >Dumplings a la plancha</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-decoration-underline">
+            Ingredientes para 4 personas:
+            <ul>
+              <li>40 dumplings congelados</li>             
+            </ul>    
+          </p>
+
+          <p class="text-decoration-underline">
+            Salsa clásica:
+            <ul>
+              <li>2 cucharadas Salsa de soja</li>             
+              <li>2 cucharadas de vinagre de arroz</li>             
+              <li>Un chorrito de aceite de sésamo</li>             
+            </ul>    
+          </p>
+
+          <p class="text-decoration-underline">
+            Para cocinar:
+            <ul>
+              <li>3/4  taza de Agua</li>             
+              <li>1/2 a 2 cucharadas de maicena</li>             
+              <li>Aceite vegetal (para hacer a la plancha)</li>             
+              <li>Aceite de sésamo (para aromatizar)</li>             
+            </ul>    
+          </p>
+          
+          <h6 class="text-decoration-underline">Elaboración:</h6>
+          <p>Nuestra receta preferida sin duda alguna!! En una sartén a fuego medio, ponemos un poco de aceite vegetal, lo extendemos bien y añadimos los dumplings congelados. Pasados un par de minutos, la base estará doradita. Le añadimos el agua. Podemos usar agua sólo, pero si queremos la base con una costra crujiente añadimos maicena disuelta en agua (Super recomendado!!!). Tapamos y dejamos cocinar de 5 a 7 minutos o hasta que el agua se evapore casi por completo. Para dar aroma y que se dore mejor, añadimos un poco de aceite de sésamo. Cocinamos un par de minutos más y ya están listas para servir. No te olvides de acompañarlos con la salsa que más te guste.</p>
+        </div>
+        <div class="modal-footer position-relative" id="sasa">
+          <a href="https://youtu.be/8KwvtSLiHdA" target="_blank" class="position-absolute top-50 start-50 translate-middle">¡Ver video de la receta!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!--MODAL BAOS-->
+       <div
+       class="modal fade"
+       id="baosVapor"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+     >
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title fw-bold" id="exampleModalLabel" >Bao-zi al vapor</h5>
+             <button
+               type="button"
+               class="btn-close"
+               data-bs-dismiss="modal"
+               aria-label="Close"
+             ></button>
+           </div>
+           <div class="modal-body">
+             <p class="text-decoration-underline">
+               Ingredientes para 4 personas:
+               <ul>
+                 <li>12 bao-zi precocidos congelados</li>                  
+               </ul>    
+             </p>
+             
+             <h6 class="text-decoration-underline">Elaboración:</h6>
+             <p>Nuestros Bao-zi ya se encuentran pre-cocidos, por lo que solamente deberás calentarlos en una vaporera por solamente 10 minutos! Una vez pasado el tiempo de cocción, apagar el fuego y dejarlos reposar durante 2 minutos sin sacar la tapa de la vaporera. Luego servir en un plato y acompañar con la salsa que más te guste.</p>
+           </div>
+           <div class="modal-footer position-relative" id="sasa">
+             <a href="https://youtu.be/ZM-z8TjPXX8" target="_blank" class="position-absolute top-50 start-50 translate-middle">¡Ver video de la receta!</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+      <!--MODAL ARROLLADITOS-->
+      <div
+        class="modal fade"
+        id="arrolladitosFritos"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel" >Arrolladitos Fritos</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-decoration-underline">
+                Ingredientes para 4 personas:
+                <ul>
+                  <li>20 arrolladitos congelados</li>                  
+                </ul>    
+              </p>
+              <p class="text-decoration-underline">
+                Para la salsa Nuoc Cham:
+                <ul>
+                  <li>Salsa de pescado 4 cucharadas (1/4 taza)</li>
+                  <li>Azúcar 4 cucharadas (1/4 taza)</li>
+                  <li>Jugo de lima 4 cucharadas (1/4 taza)</li>
+                  <li>Agua 4 cucharadas (1/4 taza)</li>
+                  <li>2 dientes de Ajo</li>
+                  <li>Chile picante (a gusto)</li>
+                </ul>    
+              </p>
+              <h6 class="text-decoration-underline">Elaboración:</h6>
+              <p>Picamos los ajos y cortamos los chiles. En un bol ponemos el agua tibia y añadimos el azúcar, removemos bien hasta que se diluya completamente. Añadimos la salsa de pescado, el jugo de lima, el ajo picado y los chiles cortados al gusto y nuestra salsa Nuoc Cham ya está lista para usar. En una olla aparte poner abundante aceite para freir, una vez que este caliente incorporar los arrolladitos y freir durante 5 minutos. Una vez dorados retirar del aceite, esperar a que se enfrien y comerlos acompañados con la salsa picante.</p>
+            </div>
+            <div class="modal-footer position-relative" id="sasa">
+              <a href="https://youtu.be/OZIy82Cbgro" target="_blank" class="position-absolute top-50 start-50 translate-middle">¡Ver video de la receta (salsa picante)!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL WONTON FRITO-->
+      <div
+        class="modal fade"
+        id="wontonFrito"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel" >Wonton frito</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-decoration-underline">
+                Ingredientes para 4 personas:
+                <ul>
+                  <li>40 piezas de wontons</li>
+                  <li>1 tallo cebollita de verdeo</li>                  
+                  <li>aceite de sésamo</li>
+                </ul>    
+              </p>
+              <p class="text-decoration-underline">
+                Para la salsa agridulce:
+                <ul>
+                  <li>1,5 cucharadas de ketchup</li>
+                  <li>4 cucharadas de vinagre de arroz</li>
+                  <li>5 cucharadas de azúcar blanco</li>
+                  <li>1 cucharadita de sal</li>
+                  <li>1/2 taza de agua</li>
+                  <li>1/2 cucharada maicena (para espezar)</li>
+                </ul>    
+              </p>
+              <h6 class="text-decoration-underline">Elaboración:</h6>
+              <p>En una olla a fuego fuerte ponemos el vinagre, ketchup, azúcar sal y agua. Calentamos sin parar de remover hasta que todos los ingredientes se mezclen bien. Cuando empiece a hervir lo bajamos a fuego suave dejamos 3 minutos para que se vaya el olor del vinagre y del ketchup. Para que espese, hacemos una mezcla de maicena y agua y se la vamos añadiendo poco a poco y sin parar de remover hasta conseguir una consistencia adecuada. Lo dejamos que rompa a hervir una vez más, apagamos el fuego y dejamos enfriar. Y ya está lista para acompañar a muchos platos asiáticos. En una olla aparte poner abundante aceite para freir, una vez que este caliente incorporar los wontons y freir durante 3 minutos. Una vez dorados retirar del aceite, esperar a que se enfrien y comerlos acompañados con la salsa agridulce.</p>
+            </div>
+            <div class="modal-footer position-relative" id="sasa">
+              <a href="https://youtu.be/RqzAvxtyPZ8" target="_blank" class="position-absolute top-50 start-50 translate-middle">¡Ver video de la receta (salsa agridulce)!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL SOPA WONTON-->
+      <div
+        class="modal fade"
+        id="wontonSopa"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="exampleModalLabel" >Sopa de wonton</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-decoration-underline">
+                Ingredientes para 4 personas:
+                <ul>
+                  <li>40 piezas de wontons</li>
+                  <li>1 tallo cebollita de verdeo</li>
+                  <li>pimienta blanca</li>
+                  <li>aceite de sésamo</li>
+                </ul>    
+              </p>
+              <p class="text-decoration-underline">
+                Para la sopa:
+                <ul>
+                  <li>1 kilo huesos de cerdo o pollo</li>
+                  <li>2 cebollas</li>
+                  <li>1 cucharada de salsa de soja</li>
+                  <li>1 cucharada de sal</li>
+                  <li>Agua (cantidad necesaria)</li>
+                </ul>    
+              </p>
+              <h6 class="text-decoration-underline">Elaboración:</h6>
+              <p>Cortamos la cebolla por la mitad y las cebollitas en rodajas muy finas separando la parte verde de la blanca. Preparamos la sopa, en agua hirviendo ponemos los huesos de pollo o cerdo, cocinamos 5 minutos, los sacamos y los lavamos bien. En una olla a fuego alto ponemos 2 litros de agua, los huesos limpios y la cebolla; cuando empiece a hervir, bajamos el fuego y dejamos cocinar durante 30 minutos. Cuando la sopa este hirviendo cocinamos el wonton durante 6 minutos, unas 6 u 8 piezas por ración. Los sacamos y ponemos en agua fría para cortar la cocción, seguidamente los volvemos a cocinar 1 minuto más para conseguir una textura adecuada. En el bol donde vamos a servir, ponemos un poco de aceite de sésamo, pimienta blanca y salsa de soja ligera. Sacamos el wonton al bol, ponemos un poco de cebolleta, añadimos nuestra sopa y ya está listo para comer.</p>
+            </div>
+            <div class="modal-footer position-relative" id="sasa">
+              <a href="https://youtu.be/vWjptH4p18I" target="_blank" class="position-absolute top-50 start-50 translate-middle">¡Ver video de la receta!</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--FOOTER-->

@@ -27,6 +27,13 @@
       crossorigin="anonymous"
     />-->
 
+    <!--LIBRERIA DE ANIMACIONES-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!--FONTAWESOME-->
     <script
       src="https://kit.fontawesome.com/e80574ca7a.js"
@@ -80,23 +87,8 @@
                 <a class="nav-link" href="./recetas.html">Recetas</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sobre nosotros
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Quienes somos</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#mi">Sumate al equipo</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
 
               <li class="nav-item">
@@ -108,20 +100,37 @@
       </nav>
     </header>
 
-    <!--CARDS RECETAS-->
     <main>
-      <a href="#miModal">Abrir Modal</a>
-      <div id="miModal" class="modal">
-        <div class="modal-contenido">
-          <a href="#">X</a>
-          <h2>Mi primer Modal</h2>
-          <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>
+      <div class="nosotros">
+        <div>
+          <h1 class="nosotros_title">Sobre nosotros</h1>
+          <p class="nosotros_text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo vel
+            provident at blanditiis quos suscipit nihil beatae, nam incidunt
+            numquam quis ea quibusdam quia repellat necessitatibus quidem
+            recusandae velit iusto! Sit accusantium fugiat dolor aut ipsum,
+            repudiandae vel quisquam officiis rem facere repellat quasi est
+            recusandae pariatur, excepturi blanditiis tenetur. Voluptates
+            doloremque esse tempora laudantium autem accusantium! Earum, porro
+            consequuntur?
+          </p>
         </div>
+        <img src="./../img/Maomi.png" alt="maomi" class="nosotros_img" />
       </div>
 
-      <div class="d-flex justify-content-center">
-        <h1>Sobre nosotros</h1>
-      </div>
+      <!--MODAL CV-->
+      <section>
+        <div class="cards">
+          <div class="cards-side front">
+            <div class="cards__text">
+              Te interesaría sumarte a nuestro equipo?
+            </div>
+          </div>
+          <div class="cards-side back">
+            <div>Carga tu cv</div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--FOOTER-->

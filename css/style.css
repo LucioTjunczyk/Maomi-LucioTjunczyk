@@ -11196,7 +11196,7 @@ body {
 
 .recipes {
   padding: 2rem 0 2rem;
-  overflow: hidden;
+  margin: 5px;
   transition: transform 500ms ease;
 }
 
@@ -11249,6 +11249,10 @@ body {
   color: black;
 }
 
+#sasa {
+  margin: 2rem;
+}
+
 /*FORMULARIO CONTACTO*/
 .formulario {
   background-color: #9196f2d8;
@@ -11267,29 +11271,148 @@ body {
   background-color: #f2b3c4;
 }
 
-.modal-contenido {
-  background-color: aqua;
-  width: 300px;
-  padding: 10px 20px;
-  margin: 20% auto;
+.cards {
+  perspective: 150rem;
   position: relative;
+  height: 15rem;
+  max-width: 700px;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+  justify-items: center;
+  left: 40rem;
 }
 
-.modal {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
+.cards-side {
+  height: 15rem;
+  border-radius: 15px;
+  transition: all 0.7s ease;
+  backface-visibility: hidden;
+  position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s;
+  width: 80%;
+  padding: 2rem;
+  color: antiquewhite;
 }
 
-#miModal:target {
-  opacity: 1;
-  pointer-events: auto;
+.cards__text {
+  color: #303030;
+  margin-left: 15px;
+  margin-top: 15px;
+  position: relative;
+  font-size: 2vh;
+}
+
+.cards-side.back {
+  transform: rotateY(-180deg);
+  background-color: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  color: #303030;
+  font-size: 1.3vw;
+}
+
+.cards-side.front {
+  background-color: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%);
+}
+
+.cards:hover .cards-side.front {
+  transform: rotateY(180deg);
+}
+
+.cards:hover .cards-side.back {
+  transform: rotateY(0deg);
+}
+
+.nosotros {
+  background-image: radial-gradient(circle, #858bf2, #7c83f5, #737af8, #6a72fb, #6169fd);
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+  border: 1.5px solid black;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.nosotros_title {
+  color: #ffffff;
+  font-size: 60px;
+  left: 0;
+  margin-left: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2;
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641, 1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc, -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+  }
+  25% {
+    text-shadow: -4px -4px 0 #13f1fc, -3px -3px 0 #13f1fc, -2px -2px 0 #13f1fc, -1px -1px 0 #13f1fc, 4px 4px 0 #da0641, 3px 3px 0 #da0641, 2px 2px 0 #da0641, 1px 1px 0 #da0641;
+  }
+  50% {
+    text-shadow: -4px 4px 0 #da0641, -3px 3px 0 #da0641, -2px 2px 0 #da0641, -1px 1px 0 #da0641, 4px -4px 0 #13f1fc, 3px -3px 0 #13f1fc, 2px -2px 0 #13f1fc, 1px -1px 0 #13f1fc;
+  }
+  75% {
+    text-shadow: 4px 4px 0 #13f1fc, 3px 3px 0 #13f1fc, 2px 2px 0 #13f1fc, 1px 1px 0 #13f1fc, -4px -4px 0 #da0641, -3px -3px 0 #da0641, -2px -2px 0 #da0641, -1px -1px 0 #da0641;
+  }
+  100% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641, 1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc, -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+  }
+}
+.nosotros_text {
+  font-size: 40px;
+}
+
+.nosotros_img {
+  max-width: 600px;
+}
+
+@media (min-width: 700px) and (max-width: 1500px) {
+  .nosotros {
+    display: block;
+  }
+
+  .nosotros_title {
+    font-size: 45px;
+  }
+
+  .nosotros_text {
+    font-size: 25px;
+  }
+
+  .nosotros_img {
+    max-width: 400px;
+  }
+
+  .cards {
+    left: 10rem;
+  }
+}
+@media (max-width: 700px) {
+  .nosotros {
+    display: block;
+  }
+
+  .nosotros_title {
+    font-size: 30px;
+  }
+
+  .nosotros_text {
+    font-size: 20px;
+  }
+
+  .nosotros_img {
+    max-width: 300px;
+  }
+
+  .cards {
+    left: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

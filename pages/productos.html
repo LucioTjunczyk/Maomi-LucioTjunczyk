@@ -26,6 +26,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />-->
+
+    <!--LIBRERIA DE ANIMACIONES-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!--FONTAWESOME-->
     <script
       src="https://kit.fontawesome.com/e80574ca7a.js"
@@ -79,28 +87,8 @@
                 <a class="nav-link" href="./recetas.html">Recetas</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sobre nosotros
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="./nosotros.html"
-                      >Quienes somos</a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Sumate al equipo</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
 
               <li class="nav-item">
@@ -115,6 +103,9 @@
     <!--MAIN PRODUCTOS-->
     <main>
       <section>
+        <div class="nosotros d-flex flex-column">
+          <h1 class="nosotros_title">Nuestros productos</h1>
+        </div>
         <!--CARD DUMPLINGS-->
 
         <div class="card my-5 mx-5" id="card-style">
@@ -295,6 +286,33 @@
                 alt="..."
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CARD PEDIDOS-->
+      <section class="container my-5">
+        <div class="card text-center">
+          <div class="card-header fw-bold" id="cardPedidos">
+            Maomi: Decilicas asiáticas
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dumplings, baos y arrolladitos primavera</h5>
+            <p class="card-text">
+              Armá y combina tu pedido como vos quieras. En el caso de que
+              quieras modificar algún ingrediente nos podes avisar antes para
+              que se ajusten a lo que andas buscando.
+            </p>
+
+            <a href="#" class="btn btn-primary animate__animated animate__pulse"
+              >¡Hacé tu pedido!</a
+            >
+          </div>
+          <div class="card-footer" id="cardPedidos">
+            <p>
+              ¡Cualquier consulta que tengas sobre los productos, medios de pago
+              o envíos no dudes en escribirnos!
+            </p>
           </div>
         </div>
       </section>
