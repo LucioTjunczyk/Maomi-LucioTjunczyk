@@ -6,7 +6,7 @@
   margin: 2rem;
   box-shadow: none;
   background: none;
-  justify-items: center;
+
   left: 40rem;
 }
 
@@ -27,27 +27,57 @@
   margin-left: 15px;
   margin-top: 15px;
   position: relative;
-  font-size: 2vh;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards__img {
+  max-width: 100%;
+  height: 100px;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #df2d2d;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #df2d2d;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cards-side.back {
   transform: rotateY(-180deg);
-  background-color: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
+
+  background-image: linear-gradient(
+    to right,
+    #9399f8,
+    #797ffa,
+    #5f64f9,
+    #4147f7,
+    #1722f2
   );
   color: #303030;
   font-size: 1.3vw;
 }
 
 .cards-side.front {
-  background-color: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
+  background-image: linear-gradient(
+    to left,
+    #f2b3c4,
+    #f599b0,
+    #f67d9a,
+    #f55d82,
+    #f23669
   );
 }
 

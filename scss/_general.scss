@@ -24,6 +24,14 @@ body {
   border: px solid black !important;
 }
 
+.navbar-nav {
+  gap: 35px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
 #cardPedidos {
   background-color: #f2b3c4d8;
 }
